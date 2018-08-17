@@ -13,6 +13,13 @@ let mix = require('laravel-mix');
 
 mix.sass('src/css/app.scss', 'dist/');
 
+mix.browserSync({
+    proxy: 'pehapkari.test',
+    files: [
+        './*'
+    ]
+});
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
