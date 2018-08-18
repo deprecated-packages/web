@@ -1,0 +1,31 @@
+
+.heading {
+  .heading--title {
+    font-family: $font-family-SofiaPro;
+    color: $black;
+    max-width: 760px;
+    margin: 35px 0;
+    h1 {
+      font-weight: 600;
+      line-height: 80px;
+      opacity: 0.9;
+    }
+  }
+  .heading--subtitle {
+    max-width: 350px;
+  }
+  .button-primary {
+    margin-top: 70px;
+  }
+  .heading--background {
+    img {
+      height: 588px;
+      max-width: 882px;
+      width: 100%;
+      position: absolute;
+      top: 109px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}

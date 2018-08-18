@@ -1,7 +1,54 @@
 
+/*buttons*/
+
 .button {
+  font-family: $font-family-SourceSans;
+  font-size: $font-size-s;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.button-primary {
+  width: 260px;
   height: 72px;
   line-height: 72px;
-  width: 260px;
   background-color: $blue;
+  color: $white;
+  text-align: center;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.button-secondary {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  color: $black;
+  font-size: $font-size-s;
+  padding-left: 20px;
+  position: relative;
+  background-image: linear-gradient(to left,
+          transparent,
+          transparent 50%,
+          rgba(74, 129, 215, 0.2) 50%,
+          rgba(74, 129, 215, 0.2));
+  background-position: 86% 0;
+  background-size: 200% 100%;
+  transition: all 400ms ease;
+
+  &:hover {
+    background-position: 60% 0;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            $green 50%,
+            $green);
+  }
+  span {
+    float: right;
+  }
 }

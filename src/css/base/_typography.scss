@@ -1,10 +1,32 @@
 
+html, body {
+  font-family: $font-family-SourceSans;
+  font-size: $font-size-default;
+  min-width: 500px;
+}
 
 h1 {
-  font-size: 50px;
+  font-size: $font-size-xxl;
+}
+
+h2 {
+  font-size: $font-size-xl;
+}
+
+h3 {
+  font-size: $font-size-m;
+}
+
+h6 {
+  font-size: $font-size-default;
+  font-weight: 600;
+  opacity: 0.9;
+  line-height: 28px;
 }
 
 p {
   font-size: $font-size-default;
   line-height: 32px;
+  opacity: 0.7;
+  margin-bottom: 0;
 }
