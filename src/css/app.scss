@@ -1,5 +1,8 @@
-@import "includes/colors";
-@import "includes/fonts";
+@import "abstracts/_variables";
+@import "abstracts/_mixins";
 
-@import "core";
-@import "header";
+@import "base/_typography";
+
+@import "components/_buttons";
+
+@import "layout/_header";

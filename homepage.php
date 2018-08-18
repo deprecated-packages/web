@@ -8,6 +8,8 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet" href="/dist/app.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jmg2upk.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i|Ubuntu+Mono&amp;subset=latin-ext" rel="stylesheet">
 
     <title>Pehapkari.cz</title>
 </head>
