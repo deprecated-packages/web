@@ -1,7 +1,7 @@
 
-.card-calendar {
+
+.card-ph {
   box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
-  width: 360px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -10,54 +10,86 @@
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
+  border: none;
+  border-radius: 0;
 
+  .card-ph__card-body--date {
+    height: 64px;
+    width: 64px;
+    line-height: 21px;
+    padding: 10px 0;
+    box-shadow: 0 8px 32px 0 rgba(16,14,28,0.1);
+    background-color: $white;
+    text-align: center;
+    color: $black;
+    .card-ph__card-body--date-day {
+      font-family: $font-family-SofiaPro;
+      font-size: 28px;
+      text-align: center;
+      display: block;
+    }
+    .card-ph__card-body--date-month {
+      opacity: 0.9;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
+
+.card-calendar {
+  width: 360px;
   .card-calendar__card-img-top {
     height: 200px;
     max-width: 100%;
+    width: 100%;
   }
   .card-calendar__card-body {
+    display: flex;
+    flex-direction: column;
+    height: 168px;
     padding: 24px 30px;
-
+    .card-ph__card-body--date {
+      position: absolute;
+      top: 166px;
+      right: 25px;
+    }
     .card-calendar__card-body--card-title {
       font-family: $font-family-SofiaPro;
-      margin-bottom: 40px;
+      max-width: 200px;
+      width: 100%;
     }
     .card-calendar__card-body--address {
       font-size: $font-size-s;
       line-height: 24px;
       cursor: pointer;
+      margin-top: auto;
       img {
         opacity: 1;
         float: right;
       }
     }
-    .card-calendar__card-body--date {
-      position: absolute;
-      top: 166px;
-      left: 277px;
+  }
+}
+
+.card-livestream {
+  height: 250px;
+  .card-ph__card-body {
+    padding: 40px;
+    .card-ph__card-body-link {
+      text-transform: uppercase;
+      margin-top: 70px;
+      a {
+        color: $facebook;
+        font-size: $font-size-s;
+        font-weight: 600;
+        line-height: 20px;
+
+      }
     }
   }
 }
 
-.card-calendar__card-body--date {
-  height: 64px;
-  width: 64px;
-  line-height: 21px;
-  padding: 10px 0;
-  box-shadow: 0 8px 32px 0 rgba(16,14,28,0.1);
-  background-color: $white;
-  text-align: center;
-  color: $black;
-  .card-calendar__card-body--date-day {
-    font-family: $font-family-SofiaPro;
-    font-size: 28px;
-    text-align: center;
-    display: block;
-  }
-  .card-calendar__card-body--date-month {
-    opacity: 0.9;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-  }
-}
+
+
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* colors */
 /* font-sizes */
 /* font-family */
@@ -6,16 +7,26 @@
 html, body {
   font-family: "Source Sans Pro";
   font-size: 20px;
+  color: #100E1C;
   min-width: 500px; }
 
 h1 {
-  font-size: 72px; }
+  font-size: 72px;
+  font-family: "sofia-pro-soft", sans-serif;
+  font-weight: 600;
+  opacity: 0.9; }
 
 h2 {
-  font-size: 40px; }
+  font-size: 40px;
+  font-family: "sofia-pro-soft", sans-serif;
+  font-weight: 600;
+  opacity: 0.9; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "sofia-pro-soft", sans-serif;
+  font-weight: 600;
+  opacity: 0.9; }
 
 h6 {
   font-size: 20px;
@@ -61,7 +72,7 @@ section {
   padding-left: 20px;
   position: relative;
   background-image: linear-gradient(to left, transparent, transparent 50%, rgba(74, 129, 215, 0.2) 50%, rgba(74, 129, 215, 0.2));
-  background-position: 86% 0;
+  background-position: 78% 0;
   background-size: 200% 100%;
   transition: all 400ms ease; }
   .button-secondary:hover {
@@ -70,9 +81,8 @@ section {
   .button-secondary span {
     float: right; }
 
-.card-calendar {
+.card-ph {
   box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
-  width: 360px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -80,71 +90,202 @@ section {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-clip: border-box; }
+  background-clip: border-box;
+  border: none;
+  border-radius: 0; }
+  .card-ph .card-ph__card-body--date {
+    height: 64px;
+    width: 64px;
+    line-height: 21px;
+    padding: 10px 0;
+    box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #100E1C; }
+    .card-ph .card-ph__card-body--date .card-ph__card-body--date-day {
+      font-family: "sofia-pro-soft", sans-serif;
+      font-size: 28px;
+      text-align: center;
+      display: block; }
+    .card-ph .card-ph__card-body--date .card-ph__card-body--date-month {
+      opacity: 0.9;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center; }
+
+.card-calendar {
+  width: 360px; }
   .card-calendar .card-calendar__card-img-top {
     height: 200px;
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
   .card-calendar .card-calendar__card-body {
+    display: flex;
+    flex-direction: column;
+    height: 168px;
     padding: 24px 30px; }
+    .card-calendar .card-calendar__card-body .card-ph__card-body--date {
+      position: absolute;
+      top: 166px;
+      right: 25px; }
     .card-calendar .card-calendar__card-body .card-calendar__card-body--card-title {
       font-family: "sofia-pro-soft", sans-serif;
-      margin-bottom: 40px; }
+      max-width: 200px;
+      width: 100%; }
     .card-calendar .card-calendar__card-body .card-calendar__card-body--address {
       font-size: 16px;
       line-height: 24px;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-top: auto; }
       .card-calendar .card-calendar__card-body .card-calendar__card-body--address img {
         opacity: 1;
         float: right; }
-    .card-calendar .card-calendar__card-body .card-calendar__card-body--date {
-      position: absolute;
-      top: 166px;
-      left: 277px; }
 
-.card-calendar__card-body--date {
-  height: 64px;
-  width: 64px;
-  line-height: 21px;
-  padding: 10px 0;
-  box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
-  background-color: #FFFFFF;
-  text-align: center;
-  color: #100E1C; }
-  .card-calendar__card-body--date .card-calendar__card-body--date-day {
-    font-family: "sofia-pro-soft", sans-serif;
-    font-size: 28px;
-    text-align: center;
-    display: block; }
-  .card-calendar__card-body--date .card-calendar__card-body--date-month {
-    opacity: 0.9;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center; }
+.card-livestream {
+  height: 250px; }
+  .card-livestream .card-ph__card-body {
+    padding: 40px; }
+    .card-livestream .card-ph__card-body .card-ph__card-body-link {
+      text-transform: uppercase;
+      margin-top: 70px; }
+      .card-livestream .card-ph__card-body .card-ph__card-body-link a {
+        color: #3B5998;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px; }
 
-header {
-  color: black; }
+.nav-ph {
+  font-size: 15px;
+  line-height: 15px;
+  text-align: right;
+  height: 100px;
+  display: flex;
+  align-items: center; }
+  .nav-ph .nav-ph__logo {
+    float: left;
+    margin-right: auto; }
+    .nav-ph .nav-ph__logo a {
+      opacity: 0.7;
+      color: #100E1C; }
+  .nav-ph .nav-ph__menu ul {
+    list-style-type: none;
+    margin-bottom: 0; }
+    .nav-ph .nav-ph__menu ul li {
+      display: inline;
+      padding: 0 15px; }
+      .nav-ph .nav-ph__menu ul li:last-child {
+        padding-right: 0; }
+      .nav-ph .nav-ph__menu ul li a {
+        opacity: 0.7;
+        color: #100E1C; }
 
-.heading .heading--title {
-  font-family: "sofia-pro-soft", sans-serif;
-  color: #100E1C;
+.bg-light {
+  background-color: #FFFFFF !important; }
+
+.footer-ph {
+  background-color: #100E1C;
+  font-size: 16px;
+  color: #FFFFFF; }
+  .footer-ph p {
+    font-size: 16px; }
+  .footer-ph .footer-ph__header {
+    padding-top: 110px;
+    font-size: 15px; }
+    .footer-ph .footer-ph__header img {
+      margin-right: 10px; }
+    .footer-ph .footer-ph__header ul {
+      list-style-type: none; }
+      .footer-ph .footer-ph__header ul li {
+        display: inline; }
+        .footer-ph .footer-ph__header ul li a {
+          padding: 0 10px; }
+  .footer-ph .footer-ph__body {
+    margin-top: 144px;
+    display: flex; }
+    .footer-ph .footer-ph__body .footer-ph__body--lef-column {
+      max-width: 260px;
+      line-height: 32px; }
+      .footer-ph .footer-ph__body .footer-ph__body--lef-column p {
+        opacity: 0.7; }
+    .footer-ph .footer-ph__body .footer-ph__body--menu {
+      display: flex; }
+      .footer-ph .footer-ph__body .footer-ph__body--menu ul {
+        list-style-type: none; }
+      .footer-ph .footer-ph__body .footer-ph__body--menu .footer-ph__body--menu-title {
+        font-family: "sofia-pro-soft", sans-serif;
+        font-weight: 500;
+        line-height: 19px;
+        opacity: 0.35;
+        margin-bottom: 30px; }
+      .footer-ph .footer-ph__body .footer-ph__body--menu .footer-ph__body--menu-subtitle {
+        padding: 5px 0; }
+        .footer-ph .footer-ph__body .footer-ph__body--menu .footer-ph__body--menu-subtitle a {
+          color: #FFFFFF;
+          line-height: 18px; }
+  .footer-ph .footer-ph__footer {
+    padding-top: 122px;
+    padding-bottom: 20px;
+    text-align: left; }
+
+.homepage .heading .heading--title {
   max-width: 760px;
   margin: 35px 0; }
-  .heading .heading--title h1 {
-    font-weight: 600;
-    line-height: 80px;
-    opacity: 0.9; }
-.heading .heading--subtitle {
+  .homepage .heading .heading--title h1 {
+    line-height: 80px; }
+.homepage .heading .heading--subtitle {
   max-width: 350px; }
-.heading .button-primary {
+.homepage .heading .button-primary {
   margin-top: 70px; }
-.heading .heading--background img {
-  height: 588px;
+.homepage .heading .heading--background img {
+  max-height: 588px;
   max-width: 882px;
   width: 100%;
   position: absolute;
-  top: 109px;
+  top: 208px;
   right: 0;
   z-index: -1; }
+
+/*components*/
+.par {
+  max-width: 360px; }
+  .par .par__title {
+    line-height: 48px;
+    margin-bottom: 20px; }
+
+.counter {
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 100%; }
+  .counter .counter__number {
+    line-height: 48px; }
+
+.background-banner {
+  width: 900px;
+  height: 320px;
+  background-image: url(/images/slacks@2x.jpg?273a467ÔÇŽ);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -370px;
+  background-size: 900px 317px; }
+
+.icon-row {
+  margin-top: 60px; }
+
+.icon-social {
+  display: flex;
+  height: 136px;
+  width: 260px;
+  background-color: #E6E6E6; }
+  .icon-social img {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    margin: auto; }
+
+.container-ph {
+  max-width: 1500px;
+  margin-left: auto;
+  padding-right: 15px; }
 
 /*!
  * Bootstrap Grid v4.1.2 (https://getbootstrap.com/)
@@ -165,8 +306,8 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -180,20 +321,20 @@ html {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1159px; } }
+      max-width: 1140px; } }
 
 .container-fluid {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px; }
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .no-gutters {
   margin-right: 0;
@@ -212,8 +353,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 .col {
   flex-basis: 0;
