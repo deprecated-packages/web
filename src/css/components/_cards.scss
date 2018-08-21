@@ -1,5 +1,3 @@
-
-
 .ph-card {
   box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
   position: relative;
@@ -19,16 +17,18 @@
   width: 64px;
   line-height: 21px;
   padding: 10px 0;
-  box-shadow: 0 8px 32px 0 rgba(16,14,28,0.1);
+  box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
   background-color: $white;
   text-align: center;
   color: $black;
+
   .ph-card__body-date-day {
     font-family: $font-family-secondary;
     font-size: 28px;
     text-align: center;
     display: block;
   }
+
   .ph-card__body-date-month {
     opacity: 0.9;
     font-size: 12px;
@@ -43,26 +43,31 @@
     max-width: 100%;
     width: 100%;
   }
+
   .card-calendar__body {
     display: flex;
     flex-direction: column;
     height: 168px;
     padding: 24px 30px;
+
     .ph-card__body-date {
       position: absolute;
       top: 166px;
       right: 25px;
     }
+
     .card-calendar__body-title {
       font-family: $font-family-secondary;
       max-width: 200px;
       width: 100%;
     }
+
     .card-calendar__body-address {
       font-size: $font-size-s;
       line-height: 24px;
       cursor: pointer;
       margin-top: auto;
+
       img {
         opacity: 1;
         float: right;
@@ -73,22 +78,20 @@
 
 .card-livestream {
   height: 250px;
+
   .ph-card__body {
     padding: 40px;
+
     .ph-card__body-link {
       text-transform: uppercase;
       margin-top: 70px;
+
       a {
         color: $facebook;
         font-size: $font-size-s;
         font-weight: 600;
         line-height: 20px;
-
       }
     }
   }
 }
-
-
-
-
