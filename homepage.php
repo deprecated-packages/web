@@ -182,7 +182,7 @@
     <section class="ph-section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 d-flex flex-column">
                     <div class="ph-par">
                         <h2 class="ph-par__title">
                             Watch a <br> livestream
@@ -191,7 +191,7 @@
                             Everybody knows that our Slack community rocks.
                         </p>
                     </div>
-                    <div class="ph-button ph-button-secondary" style="margin-top: 70px">
+                    <div class="ph-button ph-button-secondary mt-auto">
                         More on livestreams
                         <span><img src="src/icons/arrow_right_dark.svg"></span>
                     </div>

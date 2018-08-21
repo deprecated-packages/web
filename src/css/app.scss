@@ -1,13 +1,13 @@
-@import "abstracts/_variables";
-@import "abstracts/_mixins";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-@import "base/_typography";
-@import "base/_page";
+@import "base/typography";
+@import "base/page";
 
-@import "components/_buttons";
-@import "components/_cards";
+@import "components/buttons";
+@import "components/cards";
 
-@import "layout/_header";
-@import "layout/_footer";
+@import "layout/header";
+@import "layout/footer";
 
-@import "pages/_homepage.scss";
+@import "pages/homepage.scss";
