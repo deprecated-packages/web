@@ -1,8 +1,8 @@
 
 /*buttons*/
 
-.button {
-  font-family: $font-family-SourceSans;
+.ph-button {
+  font-family: $font-family-primary;
   font-size: $font-size-s;
   font-weight: 600;
   text-transform: uppercase;
@@ -10,7 +10,7 @@
   cursor: pointer;
   transition: all 400ms ease;
 }
-.button-primary {
+.ph-button-primary {
   width: 260px;
   height: 72px;
   line-height: 72px;
@@ -23,7 +23,7 @@
   }
 }
 
-.button-secondary {
+.ph-button-secondary {
   width: 260px;
   height: 40px;
   line-height: 40px;

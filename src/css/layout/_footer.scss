@@ -1,59 +1,60 @@
 
-.footer-ph {
+.ph-footer {
   background-color: $black;
   font-size: $font-size-s;
   color: $white;
   p {
     font-size: $font-size-s;
   }
-  .footer-ph__header {
+  .ph-footer__header {
     padding-top: 110px;
     font-size: $font-size-xs;
     img {
       margin-right: 10px;
     }
-    ul {
+    .ph-footer__header-menu {
       list-style-type: none;
-      li {
+      .ph-footer__header-menu-item {
         display: inline;
-        a {
+        .ph-footer__header-menu-item-link {
           padding: 0 10px;
         }
       }
     }
   }
-  .footer-ph__body {
+  .ph-footer__body {
     margin-top: 144px;
     display: flex;
-    .footer-ph__body--lef-column {
+    .ph-footer__body-left-column {
       max-width: 260px;
       line-height: 32px;
       p {
         opacity: 0.7;
       }
     }
-    .footer-ph__body--menu {
+    .ph-footer__body-menu {
       display: flex;
-      ul {
+      .ph-footer__body-menu-item {
         list-style-type: none;
       }
-      .footer-ph__body--menu-title {
-        font-family: $font-family-SofiaPro;
+
+      .ph-footer__body-menu-item-title {
+        font-family: $font-family-secondary;
         font-weight: 500;
         line-height: 19px;
         opacity: 0.35;
         margin-bottom: 30px;
       }
-      .footer-ph__body--menu-subtitle {
+      .ph-footer__body-menu-item-subtitle {
         padding: 5px 0;
-        a {
+        .ph-footer__body-menu-item-subtitle-link {
           color: $white;
           line-height: 18px;
         }
       }
     }
   }
-  .footer-ph__footer {
+  .ph-footer__footer {
     padding-top: 122px;
     padding-bottom: 20px;
     text-align: left;

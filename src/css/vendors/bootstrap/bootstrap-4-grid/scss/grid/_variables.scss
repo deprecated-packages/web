@@ -167,7 +167,6 @@ $body-color:                $gray-900 !default;
 
 $link-color:                theme-color("primary") !default;
 $link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
 
 // Paragraphs
@@ -202,7 +201,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1200px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -213,7 +212,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           40px !default;
 
 // Components
 //

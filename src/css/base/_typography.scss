@@ -1,6 +1,6 @@
 
 html, body {
-  font-family: $font-family-SourceSans;
+  font-family: $font-family-primary;
   font-size: $font-size-default;
   color: $black;
   min-width: 500px;
@@ -8,21 +8,21 @@ html, body {
 
 h1 {
   font-size: $font-size-xxl;
-  font-family: $font-family-SofiaPro;
+  font-family: $font-family-secondary;
   font-weight: 600;
   opacity: 0.9;
 }
 
 h2 {
   font-size: $font-size-xl;
-  font-family: $font-family-SofiaPro;
+  font-family: $font-family-secondary;
   font-weight: 600;
   opacity: 0.9;
 }
 
 h3 {
   font-size: $font-size-m;
-  font-family: $font-family-SofiaPro;
+  font-family: $font-family-secondary;
   font-weight: 600;
   opacity: 0.9;
 }
