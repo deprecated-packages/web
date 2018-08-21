@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 mix.sass('src/css/app.scss', 'dist/');
 
 mix.browserSync({
-    proxy: 'pehapkari.test',
+    proxy: process.env.MIX_APP_URL,
     files: [
         './*'
     ]
