@@ -1,6 +1,3 @@
-
-/*buttons*/
-
 .ph-button {
   font-family: $font-family-primary;
   font-size: $font-size-s;
@@ -10,6 +7,7 @@
   cursor: pointer;
   transition: all 400ms ease;
 }
+
 .ph-button-primary {
   width: 260px;
   height: 72px;
@@ -31,23 +29,24 @@
   font-size: $font-size-s;
   padding-left: 20px;
   position: relative;
-  background-image: linear-gradient(to left,
+  background: linear-gradient(to left,
           transparent,
           transparent 50%,
           rgba(74, 129, 215, 0.2) 50%,
-          rgba(74, 129, 215, 0.2));
-  background-position: 78% 0;
+          rgba(74, 129, 215, 0.2)
+  ) 78% 0;
   background-size: 200% 100%;
   transition: all 400ms ease;
 
   &:hover {
-    background-position: 60% 0;
-    background-image: linear-gradient(to left,
+    background: linear-gradient(to left,
             transparent,
             transparent 50%,
             $green 50%,
-            $green);
+            $green
+    ) 60% 0;
   }
+
   span {
     float: right;
   }
