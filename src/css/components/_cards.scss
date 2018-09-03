@@ -38,6 +38,7 @@
 }
 
 .card-calendar {
+
   .card-calendar__img-top {
     height: 200px;
     max-width: 100%;
@@ -55,23 +56,32 @@
       top: 166px;
       right: 25px;
     }
+  }
 
-    .card-calendar__body-title {
-      font-family: $font-family-secondary;
-      max-width: 200px;
-      width: 100%;
+  .card-calendar__body-title {
+    font-family: $font-family-secondary;
+    max-width: 200px;
+    width: 100%;
+    color: black!important;
+
+    &:hover {
+      text-decoration-color: black;
+    }
+  }
+
+  .card-calendar__body-address {
+    font-size: $font-size-s;
+    line-height: 24px;
+    cursor: pointer;
+    margin-top: auto;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
     }
 
-    .card-calendar__body-address {
-      font-size: $font-size-s;
-      line-height: 24px;
-      cursor: pointer;
-      margin-top: auto;
-
-      img {
-        opacity: 1;
-        float: right;
-      }
+    img {
+      float: right;
     }
   }
 }

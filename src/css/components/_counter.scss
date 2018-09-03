@@ -1,0 +1,13 @@
+.ph-counter {
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 100%;
+
+  .ph-counter__number {
+    line-height: 48px;
+  }
+
+  .ph-counter__body {
+    font-weight: 500;
+  }
+}

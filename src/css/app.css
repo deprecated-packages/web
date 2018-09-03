@@ -1,294 +1,58 @@
-@charset "UTF-8";
-/* colors */
-/* font-sizes */
-/* font-family */
-/* font-weights */
-/* font-opacity */
-html, body {
-  font-family: "Source Sans Pro";
-  font-size: 20px;
-  color: #100E1C;
-  min-width: 500px; }
+/*
+Error: File to import not found or unreadable: ~bootstrap/scss/variables.
+        on line 3 of app.scss
 
-h1 {
-  font-size: 72px;
-  font-family: "sofia-pro-soft", sans-serif;
-  font-weight: 600;
-  opacity: 0.9; }
+1: @import "abstracts/bootstrap";
+2: 
+3: @import "~bootstrap/scss/variables";
+4: @import "~bootstrap/scss/mixins";
+5: @import "~bootstrap/scss/grid";
+6: @import "~bootstrap/scss/navbar";
+7: @import "~bootstrap/scss/nav";
+8: 
 
-h2 {
-  font-size: 40px;
-  font-family: "sofia-pro-soft", sans-serif;
-  font-weight: 600;
-  opacity: 0.9; }
-
-h3 {
-  font-size: 24px;
-  font-family: "sofia-pro-soft", sans-serif;
-  font-weight: 600;
-  opacity: 0.9; }
-
-h6 {
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0.9;
-  line-height: 28px; }
-
-p {
-  font-size: 20px;
-  line-height: 32px;
-  opacity: 0.7;
-  margin-bottom: 0; }
-
-.ph-section {
-  padding: 150px 0; }
-
-/*buttons*/
-.ph-button {
-  font-family: "Source Sans Pro";
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: normal;
-  cursor: pointer;
-  transition: all 400ms ease; }
-
-.ph-button-primary {
-  width: 260px;
-  height: 72px;
-  line-height: 72px;
-  background-color: #4A81D7;
-  color: #FFFFFF;
-  text-align: center; }
-  .ph-button-primary:hover {
-    background-color: #90D261; }
-
-.ph-button-secondary {
-  width: 260px;
-  height: 40px;
-  line-height: 40px;
-  color: #100E1C;
-  font-size: 16px;
-  padding-left: 20px;
-  position: relative;
-  background-image: linear-gradient(to left, transparent, transparent 50%, rgba(74, 129, 215, 0.2) 50%, rgba(74, 129, 215, 0.2));
-  background-position: 78% 0;
-  background-size: 200% 100%;
-  transition: all 400ms ease; }
-  .ph-button-secondary:hover {
-    background-position: 60% 0;
-    background-image: linear-gradient(to left, transparent, transparent 50%, #90D261 50%, #90D261); }
-  .ph-button-secondary span {
-    float: right; }
-
-.ph-card {
-  box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  border: none;
-  border-radius: 0; }
-
-.ph-card__body-date {
-  height: 64px;
-  width: 64px;
-  line-height: 21px;
-  padding: 10px 0;
-  box-shadow: 0 8px 32px 0 rgba(16, 14, 28, 0.1);
-  background-color: #FFFFFF;
-  text-align: center;
-  color: #100E1C; }
-  .ph-card__body-date .ph-card__body-date-day {
-    font-family: "sofia-pro-soft", sans-serif;
-    font-size: 28px;
-    text-align: center;
-    display: block; }
-  .ph-card__body-date .ph-card__body-date-month {
-    opacity: 0.9;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center; }
-
-.card-calendar .card-calendar__img-top {
-  height: 200px;
-  max-width: 100%;
-  width: 100%; }
-.card-calendar .card-calendar__body {
-  display: flex;
-  flex-direction: column;
-  height: 168px;
-  padding: 24px 30px; }
-  .card-calendar .card-calendar__body .ph-card__body-date {
-    position: absolute;
-    top: 166px;
-    right: 25px; }
-  .card-calendar .card-calendar__body .card-calendar__body-title {
-    font-family: "sofia-pro-soft", sans-serif;
-    max-width: 200px;
-    width: 100%; }
-  .card-calendar .card-calendar__body .card-calendar__body-address {
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-    margin-top: auto; }
-    .card-calendar .card-calendar__body .card-calendar__body-address img {
-      opacity: 1;
-      float: right; }
-
-.card-livestream {
-  height: 250px; }
-  .card-livestream .ph-card__body {
-    padding: 40px; }
-    .card-livestream .ph-card__body .ph-card__body-link {
-      text-transform: uppercase;
-      margin-top: 70px; }
-      .card-livestream .ph-card__body .ph-card__body-link a {
-        color: #3B5998;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px; }
-
-.ph-nav {
-  font-size: 15px;
-  line-height: 15px;
-  text-align: right;
-  height: 100px;
-  display: flex;
-  align-items: center; }
-  .ph-nav .ph-nav__logo {
-    float: left;
-    margin-right: auto; }
-    .ph-nav .ph-nav__logo a {
-      opacity: 0.7;
-      color: #100E1C; }
-  .ph-nav .ph-nav__menu {
-    list-style-type: none;
-    margin-bottom: 0; }
-    .ph-nav .ph-nav__menu .ph-nav__menu-item {
-      display: inline;
-      padding: 0 15px; }
-      .ph-nav .ph-nav__menu .ph-nav__menu-item:last-child {
-        padding-right: 0; }
-      .ph-nav .ph-nav__menu .ph-nav__menu-item .ph-nav__menu-item-link {
-        opacity: 0.7;
-        color: #100E1C; }
-
-.bg-light {
-  background-color: #FFFFFF !important; }
-
-.ph-footer {
-  background-color: #100E1C;
-  font-size: 16px;
-  color: #FFFFFF; }
-  .ph-footer p {
-    font-size: 16px; }
-  .ph-footer .ph-footer__header {
-    padding-top: 110px;
-    font-size: 15px; }
-    .ph-footer .ph-footer__header img {
-      margin-right: 10px; }
-    .ph-footer .ph-footer__header .ph-footer__header-menu {
-      list-style-type: none; }
-      .ph-footer .ph-footer__header .ph-footer__header-menu .ph-footer__header-menu-item {
-        display: inline; }
-        .ph-footer .ph-footer__header .ph-footer__header-menu .ph-footer__header-menu-item .ph-footer__header-menu-item-link {
-          padding: 0 10px; }
-  .ph-footer .ph-footer__body {
-    margin-top: 144px;
-    display: flex; }
-    .ph-footer .ph-footer__body .ph-footer__body-left-column {
-      max-width: 260px;
-      line-height: 32px; }
-      .ph-footer .ph-footer__body .ph-footer__body-left-column p {
-        opacity: 0.7; }
-    .ph-footer .ph-footer__body .ph-footer__body-menu {
-      display: flex; }
-      .ph-footer .ph-footer__body .ph-footer__body-menu .ph-footer__body-menu-item {
-        list-style-type: none; }
-      .ph-footer .ph-footer__body .ph-footer__body-menu .ph-footer__body-menu-item-title {
-        font-family: "sofia-pro-soft", sans-serif;
-        font-weight: 500;
-        line-height: 19px;
-        opacity: 0.35;
-        margin-bottom: 30px; }
-      .ph-footer .ph-footer__body .ph-footer__body-menu .ph-footer__body-menu-item-subtitle {
-        padding: 5px 0; }
-        .ph-footer .ph-footer__body .ph-footer__body-menu .ph-footer__body-menu-item-subtitle .ph-footer__body-menu-item-subtitle-link {
-          color: #FFFFFF;
-          line-height: 18px; }
-  .ph-footer .ph-footer__footer {
-    padding-top: 122px;
-    padding-bottom: 20px;
-    text-align: left; }
-
-.homepage .ph-button-primary {
-  margin-top: 70px; }
-
-.ph-heading .ph-heading_col {
-  height: 588px;
-  display: flex;
-  flex-direction: column; }
-.ph-heading .ph-heading__title {
-  max-width: 760px;
-  margin: 35px 0; }
-  .ph-heading .ph-heading__title h1 {
-    line-height: 80px; }
-.ph-heading .ph-heading__subtitle {
-  max-width: 350px; }
-
-.ph-heading__background {
-  position: absolute;
-  width: 100%;
-  right: 0;
-  /*background-image: url(/images/homepage/1@2x.jpg);*/ }
-  .ph-heading__background img {
-    position: absolute;
-    height: 588px;
-    right: 0;
-    max-width: 100%; }
-
-/*components*/
-.ph-par {
-  max-width: 360px; }
-  .ph-par .ph-par__title {
-    line-height: 48px;
-    margin-bottom: 20px; }
-  .ph-par .ph-par-body {
-    max-width: 360px; }
-
-.ph-counter {
-  flex: 0 0 50%;
-  max-width: 50%;
-  width: 100%; }
-  .ph-counter .ph-counter__number {
-    line-height: 48px; }
-
-.ph-bg-banner {
-  width: 900px;
-  height: 320px;
-  background-image: url(/images/slacks@2x.jpg?273a467ÔÇŽ);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -370px;
-  background-size: 900px 317px; }
-
-.ph-icon-row {
-  margin-top: 60px; }
-
-.ph-icon-social {
-  display: flex;
-  height: 136px;
-  width: 260px;
-  background-color: #E6E6E6; }
-  .ph-icon-social img {
-    max-width: 50px;
-    max-height: 50px;
-    width: 100%;
-    margin: auto; }
-
-/*# sourceMappingURL=app.css.map */
+Backtrace:
+app.scss:3
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+C:/Ruby24-x64/bin/scss:23:in `load'
+C:/Ruby24-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/variables.\A         on line 3 of app.scss\A \A 1: @import \"abstracts/bootstrap\";\A 2: \A 3: @import \"~bootstrap/scss/variables\";\A 4: @import \"~bootstrap/scss/mixins\";\A 5: @import \"~bootstrap/scss/grid\";\A 6: @import \"~bootstrap/scss/navbar\";\A 7: @import \"~bootstrap/scss/nav\";\A 8: "; }

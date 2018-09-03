@@ -2,40 +2,48 @@ html, body {
   font-family: $font-family-primary;
   font-size: $font-size-default;
   color: $black;
-  min-width: 500px;
+  min-width: 350px;
 }
 
 h1 {
   font-size: $font-size-xxl;
   font-family: $font-family-secondary;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: $font-opacity-low;
 }
 
 h2 {
   font-size: $font-size-xl;
   font-family: $font-family-secondary;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: $font-opacity-low;
 }
 
 h3 {
   font-size: $font-size-m;
   font-family: $font-family-secondary;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: $font-opacity-low;
 }
 
 h6 {
   font-size: $font-size-default;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: $font-opacity-low;
   line-height: 28px;
 }
 
 p {
   font-size: $font-size-default;
   line-height: 32px;
-  opacity: 0.7;
+  opacity: $font-opacity-high;
   margin-bottom: 0;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    text-decoration-color: $black;
+  }
 }

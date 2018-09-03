@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+var mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -19,6 +19,8 @@ mix.browserSync({
         './*'
     ]
 });
+
+mix.disableNotifications();
 
 // Full API
 // mix.js(src, output);

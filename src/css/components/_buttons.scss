@@ -29,22 +29,12 @@
   font-size: $font-size-s;
   padding-left: 20px;
   position: relative;
-  background: linear-gradient(to left,
-          transparent,
-          transparent 50%,
-          rgba(74, 129, 215, 0.2) 50%,
-          rgba(74, 129, 215, 0.2)
-  ) 78% 0;
+  background: linear-gradient(to left, transparent, transparent 50%, rgba(74, 129, 215, 0.2) 50%, rgba(74, 129, 215, 0.2)) 78% 0;
   background-size: 200% 100%;
   transition: all 400ms ease;
 
   &:hover {
-    background: linear-gradient(to left,
-            transparent,
-            transparent 50%,
-            $green 50%,
-            $green
-    ) 60% 0;
+    background: linear-gradient(to left, transparent, transparent 50%, $green 50%, $green) 60% 0;
   }
 
   span {
