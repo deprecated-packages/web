@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse">
             <div class="ph-nav__logo">
                 <a href="#">
-                    <img src="src/icons/logo/logo_green.svg" alt="logo" title="">
+                    <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
                     <span class="ml-2">Pehápkáři</span>
                 </a>
             </div>
