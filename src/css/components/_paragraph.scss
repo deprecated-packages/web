@@ -5,7 +5,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   .ph-par {
 
     .ph-par__title {

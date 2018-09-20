@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@include media-breakpoint-up(sm)  {
 
   .homepage {
 
@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
 
   .homepage {
 
@@ -233,7 +233,8 @@
   }
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
+
   .homepage {
 
     .ph-heading__background {
@@ -253,7 +254,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
 
   .homepage {
 

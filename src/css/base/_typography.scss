@@ -52,7 +52,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
 
   h1 {
     font-size: $font-size-xxl;

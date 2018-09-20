@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   .ph-counter {
 
     .ph-counter__number {
