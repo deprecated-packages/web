@@ -34,6 +34,7 @@
     font-size: 12px;
     font-weight: 600;
     text-align: center;
+    letter-spacing: 1px;
   }
 }
 
@@ -46,23 +47,19 @@
   }
 
   .card-calendar__body {
-    display: flex;
-    flex-direction: column;
-    height: 168px;
     padding: 24px 30px;
 
     .ph-card__body-date {
       position: absolute;
-      top: 166px;
-      right: 25px;
+      top: 168px;
+      right: 15px;
     }
   }
 
   .card-calendar__body-title {
     font-family: $font-family-secondary;
-    max-width: 200px;
     width: 100%;
-    color: black!important;
+    color: $black!important;
 
     &:hover {
       text-decoration-color: black;
@@ -70,11 +67,14 @@
   }
 
   .card-calendar__body-address {
+    display: block;
     font-size: $font-size-s;
+    opacity: $font-opacity-high;
     line-height: 24px;
     cursor: pointer;
-    margin-top: auto;
-    color: black;
+    margin-top: 45px;
+    color: $black;
+    word-wrap: break-word;
 
     &:hover {
       text-decoration: underline;
@@ -87,20 +87,34 @@
 }
 
 .card-livestream {
-  height: 250px;
+  padding: 40px;
 
   .ph-card__body {
-    padding: 40px;
+
+    .ph-card__body-main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ph-card__body-date-col {
+      max-width: 120px;
+      width: 100%;
+    }
+
+    .ph-card__body-title {
+      line-height: 32px;
+    }
 
     .ph-card__body-link {
       text-transform: uppercase;
-      margin-top: 70px;
+      margin-top: auto;
 
       a {
         color: $facebook;
         font-size: $font-size-s;
         font-weight: 600;
         line-height: 20px;
+        letter-spacing: 1px;
       }
     }
   }

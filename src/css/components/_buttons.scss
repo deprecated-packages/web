@@ -12,6 +12,7 @@
   width: 260px;
   height: 72px;
   line-height: 72px;
+  letter-spacing: 1px;
   background-color: $blue;
   color: $white;
   text-align: center;
@@ -22,16 +23,17 @@
 }
 
 .ph-button-secondary {
+  margin-top: 75px;
   width: 260px;
-  height: 40px;
   line-height: 40px;
+  letter-spacing: 1px;
   color: $black;
   font-size: $font-size-s;
   padding-left: 20px;
   position: relative;
   background: linear-gradient(to left, transparent, transparent 50%, rgba(74, 129, 215, 0.2) 50%, rgba(74, 129, 215, 0.2)) 78% 0;
   background-size: 200% 100%;
-  transition: all 400ms ease;
+  transition: all 3s ease;
 
   &:hover {
     background: linear-gradient(to left, transparent, transparent 50%, $green 50%, $green) 60% 0;

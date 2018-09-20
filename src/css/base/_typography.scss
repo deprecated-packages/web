@@ -3,24 +3,28 @@ html, body {
   font-size: $font-size-default;
   color: $black;
   min-width: 350px;
+  overflow: auto;
 }
 
 h1 {
-  font-size: $font-size-xxl;
-  font-family: $font-family-secondary;
-  font-weight: 600;
-  opacity: $font-opacity-low;
-}
-
-h2 {
   font-size: $font-size-xl;
   font-family: $font-family-secondary;
   font-weight: 600;
   opacity: $font-opacity-low;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: $font-size-xl-mobile;
+  font-family: $font-family-secondary;
+  font-weight: 600;
+  opacity: $font-opacity-low;
+  line-height: 40px;
+  margin-bottom: 0;
 }
 
 h3 {
-  font-size: $font-size-m;
+  font-size: $font-size-default-mobile;
   font-family: $font-family-secondary;
   font-weight: 600;
   opacity: $font-opacity-low;
@@ -34,7 +38,7 @@ h6 {
 }
 
 p {
-  font-size: $font-size-default;
+  font-size: $font-size-default-mobile;
   line-height: 32px;
   opacity: $font-opacity-high;
   margin-bottom: 0;
@@ -45,5 +49,26 @@ a {
 
   &:hover {
     text-decoration-color: $black;
+  }
+}
+
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: $font-size-xxl;
+    line-height: 80px;
+  }
+
+  h2 {
+    font-size: $font-size-xl;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: $font-size-default;
+  }
+
+  h3 {
+    font-size: $font-size-m;
   }
 }

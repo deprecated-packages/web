@@ -1,7 +1,15 @@
 .ph-par {
-  max-width: 360px;
 
   .ph-par__title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ph-par {
+
+    .ph-par__title {
+      margin-bottom: 35px;
+    }
   }
 }

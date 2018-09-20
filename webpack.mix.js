@@ -13,6 +13,7 @@ let mix = require('laravel-mix');
 
 mix.sass('src/css/app.scss', 'dist/');
 mix.js('src/js/app.js', 'dist/');
+mix.setPublicPath('');
 
 mix.browserSync({
     proxy: process.env.MIX_APP_URL,
