@@ -12,14 +12,16 @@
 <body>
 <nav class="fixed-top navbar-expand-lg navbar-light bg-light ph-nav">
     <div class="container">
-        <a class="ph-nav__logo" href="#">
-            <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
-            <p>Péhápkáři</p>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="ph-nav__logo">
+            <a href="#">
+                <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
+                <span class="ml-2">Péhápkáři</span>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="menu">
             <div class="ml-auto">
                 <ul class="ph-nav__menu">
                     <li class="ph-nav__menu-item">
