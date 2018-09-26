@@ -35,11 +35,12 @@
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
+    line-height: 30px;
+    display: block;
   }
 }
 
 .card-calendar {
-
   .card-calendar__img-top {
     height: 200px;
     max-width: 100%;
@@ -90,14 +91,13 @@
   padding: 40px;
 
   .ph-card__body {
-
     .ph-card__body-main {
       display: flex;
       flex-direction: column;
     }
 
     .ph-card__body-date-col {
-      max-width: 120px;
+      max-width: 85px;
       width: 100%;
     }
 
@@ -108,14 +108,11 @@
     .ph-card__body-link {
       text-transform: uppercase;
       margin-top: auto;
-
-      a {
-        color: $facebook;
-        font-size: $font-size-s;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 1px;
-      }
+      color: $facebook;
+      font-size: $font-size-s;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 1px;
     }
   }
 }

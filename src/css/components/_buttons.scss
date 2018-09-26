@@ -19,13 +19,17 @@
 
   &:hover {
     background-color: $green;
+    text-decoration: none;
+    color: $white;
   }
 }
 
 .ph-button-secondary {
   margin-top: 75px;
   width: 260px;
-  line-height: 40px;
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   letter-spacing: 1px;
   color: $black;
   font-size: $font-size-s;
@@ -37,6 +41,8 @@
 
   &:hover {
     background: linear-gradient(to left, transparent, transparent 50%, $green 50%, $green) 60% 0;
+    text-decoration: none;
+    color: $black;
   }
 
   span {

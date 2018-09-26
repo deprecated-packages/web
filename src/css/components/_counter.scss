@@ -1,5 +1,4 @@
 .ph-counter {
-
   .ph-counter__number {
     line-height: 40px;
   }
@@ -11,7 +10,6 @@
 
 @include media-breakpoint-up(md) {
   .ph-counter {
-
     .ph-counter__number {
       line-height: 48px;
     }

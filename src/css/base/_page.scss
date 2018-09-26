@@ -20,7 +20,7 @@
   padding-right: 52px;
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(lg) {
 
   .ph-section {
     padding: 140px 0;

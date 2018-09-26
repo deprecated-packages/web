@@ -1,7 +1,7 @@
 .ph-footer {
   background-color: $black;
-  font-weight: normal;
   font-size: $font-size-s;
+  font-weight: 300;
   color: $white;
 
   .container {
@@ -20,7 +20,6 @@
     margin-bottom: 120px;
 
     .ph-footer__header-left-col {
-
       img {
         margin-right: 10px;
       }
@@ -52,7 +51,6 @@
         }
 
         .ph-footer__header-menu-item-link {
-
           svg {
             &:hover g {
               fill: $green;
@@ -82,7 +80,7 @@
       a {
         text-decoration: underline;
         color: $white;
-        font-weight: normal;
+        font-weight: 300;
         letter-spacing: 0.5px;
 
         &:hover {
@@ -97,7 +95,6 @@
       flex-wrap: wrap;
 
       .ph-footer__body-menu {
-
         .ph-footer__body-menu-item {
           list-style-type: none;
           padding-right: 60px;
@@ -117,7 +114,6 @@
 
         .ph-footer__body-menu-item-subtitle {
           padding: 5px 0;
-
           a {
             &:hover {
               color: $green;
@@ -144,7 +140,7 @@
     text-align: left;
 
     .ph-footer__footer-sponsor {
-
+      align-items: center;
       img {
         margin-right: 20px;
       }
@@ -152,10 +148,9 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
 
   .ph-footer {
-
     .container {
       padding-top: 100px;
       padding-left: 20px;
@@ -183,7 +178,6 @@
       }
 
       .ph-footer__header-menu {
-
         .ph-footer__header-menu-item {
           padding: 0 15px;
 
@@ -203,7 +197,6 @@
         float: right;
 
         .ph-footer__body-menu {
-
           .ph-footer__body-menu-item {
             padding-inline-start: 60px;
             padding-right: 0;
@@ -233,7 +226,6 @@
 @include media-breakpoint-up(xl) {
 
   .ph-footer {
-
     .container {
       max-width: 960px;
     }

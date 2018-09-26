@@ -6,18 +6,16 @@
     <script src="/dist/app.js"></script>
     <link rel="stylesheet" href="/dist/app.css">
     <link rel="stylesheet" href="https://use.typekit.net/jmg2upk.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i|Ubuntu+Mono&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <title>Pehapkari.cz</title>
 </head>
 <body>
 <nav class="fixed-top navbar-expand-lg navbar-light bg-light ph-nav">
     <div class="container">
-        <div class="ph-nav__logo">
-            <a href="#">
-                <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
-                <span class="ml-2">Péhápkáři</span>
-            </a>
-        </div>
+        <a class="ph-nav__logo" href="#">
+            <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
+            <p>Péhápkáři</p>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,16 +64,16 @@
             <div class="container">
                 <div class="ph-heading">
                     <div class="row position-relative">
-                        <div class="col-md-7 ph-heading_col">
+                        <div class="col-xl-7 ph-heading_col">
                             <div class="ph-heading__title">
                                 <h1>The biggest Czech and Slovak PHP community</h1>
                             </div>
                             <div class="ph-heading__subtitle">
                                 <p>We are a group of over 2000 people interested in PHP, active on Facebook, Twitter, Slack, YouTube and Twitch.</p>
                             </div>
-                            <div class="ph-button ph-button-primary">
+                            <a href="#" class="ph-button ph-button-primary">
                                 see what we do
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +85,7 @@
     <section class="ph-section">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-md-4 ph-flex-column ph-first-col">
+                <div class="col-lg-4 ph-flex-column">
                     <div class="ph-par">
                         <h2 class="ph-par__title">
                             Attend a meetup
@@ -96,13 +94,13 @@
                             Everybody knows that our Slack community rocks. PHPStorm, Nette, Docker, Doctrine, Drupal, you name it, we’ve got it.
                         </p>
                     </div>
-                    <div class="ph-button ph-button-secondary">
+                    <a href="#" class="ph-button ph-button-secondary d-none d-lg-block">
                         see all 3 meetups
                         <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-md-6 pt-md-3 ph-second-col">
+                <div class="col-lg-6 pt-md-3">
                     <a href="#">
                         <div class="ph-card card-calendar">
                             <img class="card-calendar__img-top" src="src/images/homepage/1.jpg" alt="card-image" title="">
@@ -119,15 +117,15 @@
                             </div>
                         </div>
                     </a>
-                    <div class="ph-button ph-button-secondary">
+                    <a href="#" class="ph-button ph-button-secondary d-block d-lg-none">
                         see all 3 meetups
                         <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="ph-section">
+    <section class="ph-section ph-bg-banner">
         <div class="container ph-reverse-section">
             <div class="row justify-content-between flex-wrap-reverse">
                 <div class="col-lg-6 ph-counter-col">
@@ -145,9 +143,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ph-bg-banner"></div>
                 </div>
-                <div class="col-lg-4 d-flex ph-justify-flex-end ph-first-col">
+                <div class="col-lg-4 d-flex ph-justify-flex-end">
                     <div>
                         <div class="ph-par">
                             <h2 class="ph-par__title">
@@ -157,25 +154,23 @@
                                 Everybody knows that our Slack community rocks. PHPStorm, Nette, Docker, Doctrine, Drupal, you name it, we’ve got it.
                             </p>
                         </div>
-                        <div class="ph-button ph-button-secondary">
+                        <a href="#" class="ph-button ph-button-secondary d-none d-lg-block">
                             Invite yourself
                             <span><img src="src/icons/arrows/arrow_right_dark.svg"></span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="ph-second-col">
-                <div class="ph-button ph-button-secondary">
-                    Invite yourself
-                    <span><img src="src/icons/arrows/arrow_right_dark.svg"></span>
-                </div>
-            </div>
+            <a href="#" class="ph-button ph-button-secondary d-block d-lg-none">
+                Invite yourself
+                <span><img src="src/icons/arrows/arrow_right_dark.svg"></span>
+            </a>
         </div>
     </section>
     <section class="ph-section">
         <div class="container">
-            <div class="row justify-content-between ph-second-col">
-                <div class="col-lg-4 ph-first-col">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
                     <div class="ph-par">
                         <h2 class="ph-par__title">
                             Watch a <br> livestream
@@ -184,10 +179,10 @@
                             Everybody knows that our Slack community rocks.
                         </p>
                     </div>
-                    <div class="ph-button ph-button-secondary">
+                    <a href="#" class="ph-button ph-button-secondary d-none d-lg-block">
                         More about livestreams
                         <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-7 ph-column align-self-end">
                   <div class="ph-column__wrapper">
@@ -202,48 +197,44 @@
                             <div class="ph-card__body-main">
                                 <h3 class="ph-card__body-title">Postman - (Jakub Kratina)</h3>
                                 <p class="ph-card__body-time">19:00 - 21:00</p>
-                                <div class="ph-card__body-link">
-                                    <a href="#">
-                                        Go to facebook event detail
-                                    </a>
-                                </div>
+                                <a class="ph-card__body-link" href="#">
+                                    Go to facebook event detail
+                                </a>
                             </div>
                         </div>
                       </div>
                     </div>
                 </div>
-              <div class="ph-button ph-button-secondary  ml-3">
+              <a href="#" class="ph-button ph-button-secondary d-block d-lg-none ml-3">
                 More about livestreams
                 <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-              </div>
+              </a>
             </div>
         </div>
     </section>
     <section class="ph-section">
         <div class="container">
             <h2>Follow us on social media</h2>
-            <div class="ph-icon-row">
-                <div class="row">
-                    <div class="col-6 col-xl-3 mb-4 mb-xl-0">
-                        <a href="https://www.facebook.com/pehapkari/" target="_blank" class="ph-icon-social">
-                            <img src="src/icons/social/fb_white.svg" alt="fb-icon" title=""/>
-                        </a>
-                    </div>
-                    <div class="col-6 col-xl-3">
-                        <a href="#" target="_blank" class="ph-icon-social">
-                            <img src="src/icons/social/twitter_white.svg" alt="twitter-icon" title=""/>
-                        </a>
-                    </div>
-                    <div class="col-6 col-xl-3">
-                        <a href="#" target="_blank" class="ph-icon-social">
-                            <img src="src/icons/social/twitch_white.svg" alt="twitch-icon" title=""/>
-                        </a>
-                    </div>
-                    <div class="col-6 col-xl-3">
-                        <a href="#" target="_blank" class="ph-icon-social">
-                            <img src="src/icons/social/youtube_white.svg" alt="youtube-icon" title=""/>
-                        </a>
-                    </div>
+            <div class="row ph-icon-row">
+                <div class="col-6 col-xl-3 ph-icon-col">
+                    <a href="https://www.facebook.com/pehapkari/" target="_blank" class="ph-icon-social">
+                        <img src="src/icons/social/fb_white.svg" alt="fb-icon" title=""/>
+                    </a>
+                </div>
+                <div class="col-6 col-xl-3 ph-icon-col">
+                    <a href="#" target="_blank" class="ph-icon-social">
+                        <img src="src/icons/social/twitter_white.svg" alt="twitter-icon" title=""/>
+                    </a>
+                </div>
+                <div class="col-6 col-xl-3 ph-icon-col">
+                    <a href="#" target="_blank" class="ph-icon-social">
+                        <img src="src/icons/social/twitch_white.svg" alt="twitch-icon" title=""/>
+                    </a>
+                </div>
+                <div class="col-6 col-xl-3 ph-icon-col">
+                    <a href="#" target="_blank" class="ph-icon-social">
+                        <img src="src/icons/social/youtube_white.svg" alt="youtube-icon" title=""/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -479,8 +470,12 @@
                     <p>Friends:</p>
                 </div>
                 <div class="ph-footer__footer-sponsor d-flex">
-                    <img src="src/icons/partners/jetbrains_blackandwhite.svg" alt="jetbrains" title="">
-                    <img src="src/icons/partners/posledni_sobota.svg" alt="posledni_sobota" title="">
+                    <a href="https://www.jetbrains.com/" target="_blank">
+                        <img src="src/icons/partners/jetbrains_blackandwhite.svg" alt="jetbrains" title="">
+                    </a>
+                    <a href="https://www.posobota.cz/" target="_blank">
+                        <img src="src/icons/partners/posledni_sobota.svg" alt="posledni_sobota" title="">
+                    </a>
                 </div>
             </div>
         </div>
