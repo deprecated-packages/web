@@ -10,56 +10,51 @@
     <title>Pehapkari.cz</title>
 </head>
 <body>
-<nav class="fixed-top navbar-expand-lg navbar-light bg-light ph-nav">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ph-nav">
     <div class="container">
-        <div class="ph-nav__logo">
-            <a href="#">
-                <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
-                <span class="ml-2">Péhápkáři</span>
-            </a>
-        </div>
+        <a class="ph-nav__logo navbar-brand" href="#">
+            <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
+            <p class="ml-2">Péhápkáři</p>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <div class="ml-auto">
-                <ul class="ph-nav__menu">
-                    <li class="ph-nav__menu-item">
-                        <a class="ph-nav__menu-item-link" href="#meetups">
-                            Meetups
-                        </a>
-                    </li>
-                    <li class="ph-nav__menu-item">
-                        <a class="ph-nav__menu-item-link" href="#courses">
-                            Courses
-                        </a>
-                    </li>
-                    <li class="ph-nav__menu-item">
-                        <a class="ph-nav__menu-item-link" href="#livestreams">
-                            Livestreams
-                        </a>
-                    </li>
-                    <li class="ph-nav__menu-item">
-                        <a class="ph-nav__menu-item-link" href="#blog">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="ph-nav__menu-item">
-                        <a class="ph-nav__menu-item-link" href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li class="ph-nav__menu-item">
-                        <a class="ph-nav__menu-item-link" href="#contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ph-nav__menu ml-auto">
+                <li class="ph-nav__menu-item nav-item">
+                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="#meetups">
+                        Meetups
+                    </a>
+                </li>
+                <li class="ph-nav__menu-item nav-item">
+                    <a class="ph-nav__menu-item-link  ph-nav__menu-item-link__big nav-link" href="#courses">
+                        Courses
+                    </a>
+                </li>
+                <li class="ph-nav__menu-item nav-item">
+                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="#livestreams">
+                        Livestreams
+                    </a>
+                </li>
+                <li class="ph-nav__menu-item nav-item">
+                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="#blog">
+                        Blog
+                    </a>
+                </li>
+                <li class="ph-nav__menu-item nav-item">
+                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big  nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+                <li class="ph-nav__menu-item nav-item pr-lg-0">
+                    <a class="ph-nav__menu-item-link nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
-
 <div class="homepage">
     <section class="ph-section-first">
         <div class="position-relative">
