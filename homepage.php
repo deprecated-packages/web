@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="ph-nav__menu-item nav-item">
-                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big  nav-link" href="#about">
+                    <a class="ph-nav__menu-item-link nav-link" href="#about">
                         About
                     </a>
                 </li>
@@ -463,7 +463,7 @@
                 </div>
             </div>
             <div class="ph-footer__footer d-flex">
-                <div class="align-items-center d-none d-sm-flex">
+                <div class="align-items-center d-none d-md-flex">
                     <p>Friends:</p>
                 </div>
                 <div class="ph-footer__footer-sponsor d-flex">

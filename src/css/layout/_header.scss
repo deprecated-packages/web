@@ -86,6 +86,10 @@
   }
 }
 
+.bg-light {
+  background-color: $white!important;
+}
+
 @media (min-width: 576px) {
   .ph-nav {
     .container {
