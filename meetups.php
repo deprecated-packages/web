@@ -19,10 +19,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse" id="menu">
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ph-nav__menu ml-auto">
                 <li class="ph-nav__menu-item nav-item">
-                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="meetups.php">
+                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="#meetups.php">
                         Meetups
                     </a>
                 </li>
@@ -55,49 +55,24 @@
         </div>
     </div>
 </nav>
-<div class="homepage">
+
+<div class="meetups">
     <section class="ph-section-first">
-        <div class="position-relative">
-            <div class="container">
-                <div class="ph-heading">
-                    <div class="row position-relative">
-                        <div class="col-xl-7 ph-heading_col">
-                            <div class="ph-heading__title">
-                                <h1>The biggest Czech and Slovak PHP community</h1>
-                            </div>
-                            <div class="ph-heading__subtitle">
-                                <p>We are a group of over 2000 people interested in PHP, active on Facebook, Twitter, Slack, YouTube and Twitch.</p>
-                            </div>
-                            <a href="#" class="ph-button ph-button-primary">
-                                see what we do
-                            </a>
+        <div class="container">
+            <div class="ph-heading">
+                <div class="row">
+                    <div class="col-xl-6 ph-heading_col">
+                        <div class="ph-heading__title">
+                            <h1>Meetups</h1>
+                        </div>
+                        <div class="ph-heading__subtitle">
+                            <p>Meetups are one of our core activities. There are usually 2 or 3 speakers talking not only about PHP, but also about topics such as 3D modelling, self-improvement or programming tools.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ph-heading__background">
-        </div>
-    </section>
-    <section class="ph-section">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-4 ph-flex-column">
-                    <div class="ph-par">
-                        <h2 class="ph-par__title">
-                            Attend a meetup
-                        </h2>
-                        <p class="ph-par__body">
-                            Everybody knows that our Slack community rocks. PHPStorm, Nette, Docker, Doctrine, Drupal, you name it, we’ve got it.
-                        </p>
-                    </div>
-                    <a href="#" class="ph-button ph-button-secondary d-none d-lg-block">
-                        see all 3 meetups
-                        <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-                    </a>
-                </div>
-
-                <div class="col-lg-6 pt-md-3">
+            <div class="ph-scroll__row row">
+                <div class="ph-scroll__col col-lg-4">
                     <a href="#">
                         <div class="ph-card card-calendar">
                             <img class="card-calendar__img-top" src="src/images/homepage/1.jpg" alt="card-image" title="">
@@ -114,124 +89,60 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="ph-button ph-button-secondary d-block d-lg-none">
-                        see all 3 meetups
-                        <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="ph-section ph-bg-banner">
-        <div class="container ph-reverse-section">
-            <div class="row justify-content-between flex-wrap-reverse">
-                <div class="col-lg-6 ph-counter-col">
-                    <div class="d-flex flex-wrap w-100">
-                        <div class="ph-counter">
-                            <h2 class="ph-counter__number mb-0">600 +</h2>
-                            <p class="ph-counter__body">
-                                members active weekly
-                            </p>
-                        </div>
-                        <div class="ph-counter">
-                            <h2 class="ph-counter__number mb-0">55 +</h2>
-                            <p class="ph-counter__body">
-                                channels, including #beer
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex ph-justify-flex-end">
-                    <div>
-                        <div class="ph-par">
-                            <h2 class="ph-par__title">
-                                Join our Slack
-                            </h2>
-                            <p class="ph-par__body">
-                                Everybody knows that our Slack community rocks. PHPStorm, Nette, Docker, Doctrine, Drupal, you name it, we’ve got it.
-                            </p>
-                        </div>
-                        <a href="#" class="ph-button ph-button-secondary d-none d-lg-block">
-                            Invite yourself
-                            <span><img src="src/icons/arrows/arrow_right_dark.svg"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="ph-button ph-button-secondary d-block d-lg-none">
-                Invite yourself
-                <span><img src="src/icons/arrows/arrow_right_dark.svg"></span>
-            </a>
-        </div>
-    </section>
-    <section class="ph-section">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-4">
-                    <div class="ph-par">
-                        <h2 class="ph-par__title">
-                            Watch a <br> livestream
-                        </h2>
-                        <p class="ph-par__body">
-                            Everybody knows that our Slack community rocks.
-                        </p>
-                    </div>
-                    <a href="#" class="ph-button ph-button-secondary d-none d-lg-block">
-                        More about livestreams
-                        <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-                    </a>
-                </div>
-                <div class="col-lg-7 ph-column align-self-end">
-                  <div class="ph-column__wrapper">
-                    <div class="ph-card card-livestream">
-                        <div class="ph-card__body d-flex justify-content-start">
-                            <div class="ph-card__body-date-col">
+                <div class="ph-scroll__col col-lg-4">
+                    <a href="#">
+                        <div class="ph-card card-calendar">
+                            <img class="card-calendar__img-top" src="src/images/homepage/1.jpg" alt="card-image" title="">
+                            <div class="card-calendar__body">
+                                <h6 class="card-calendar__body-title">PHP Pivo 2018/4 - Pardubice</h6>
+                                <a href="#" class="card-calendar__body-address">
+                                    KoPlac, Příkop 2, 60200 Brno
+                                    <img src="src/icons/arrows/arrow_upright.svg" alt="arrow" title="">
+                                </a>
                                 <div class="ph-card__body-date">
                                     <span class="ph-card__body-date-day">4</span>
                                     <span class="ph-card__body-date-month">APR</span>
                                 </div>
                             </div>
-                            <div class="ph-card__body-main">
-                                <h3 class="ph-card__body-title">Postman - (Jakub Kratina)</h3>
-                                <p class="ph-card__body-time">19:00 - 21:00</p>
-                                <a class="ph-card__body-link" href="#">
-                                    Go to facebook event detail
+                        </div>
+                    </a>
+                </div>
+                <div class="ph-scroll__col col-lg-4">
+                    <a href="#">
+                        <div class="ph-card card-calendar">
+                            <img class="card-calendar__img-top" src="src/images/homepage/1.jpg" alt="card-image" title="">
+                            <div class="card-calendar__body">
+                                <h6 class="card-calendar__body-title">PHP Pivo 2018/4 - Pardubice</h6>
+                                <a href="#" class="card-calendar__body-address">
+                                    KoPlac, Příkop 2, 60200 Brno
+                                    <img src="src/icons/arrows/arrow_upright.svg" alt="arrow" title="">
                                 </a>
+                                <div class="ph-card__body-date">
+                                    <span class="ph-card__body-date-day">4</span>
+                                    <span class="ph-card__body-date-month">APR</span>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                    </div>
+                    </a>
                 </div>
-              <a href="#" class="ph-button ph-button-secondary d-block d-lg-none ml-3">
-                More about livestreams
-                <span><img src="src/icons/arrows/arrow_right_dark.svg" alt="arrow" title=""></span>
-              </a>
             </div>
         </div>
     </section>
     <section class="ph-section">
         <div class="container">
-            <h2>Follow us on social media</h2>
-            <div class="row ph-icon-row">
-                <div class="col-6 col-xl-3 ph-icon-col">
-                    <a href="https://www.facebook.com/pehapkari/" target="_blank" class="ph-icon-social">
-                        <img src="src/icons/social/fb_white.svg" alt="fb-icon" title=""/>
-                    </a>
-                </div>
-                <div class="col-6 col-xl-3 ph-icon-col">
-                    <a href="#" target="_blank" class="ph-icon-social">
-                        <img src="src/icons/social/twitter_white.svg" alt="twitter-icon" title=""/>
-                    </a>
-                </div>
-                <div class="col-6 col-xl-3 ph-icon-col">
-                    <a href="#" target="_blank" class="ph-icon-social">
-                        <img src="src/icons/social/twitch_white.svg" alt="twitch-icon" title=""/>
-                    </a>
-                </div>
-                <div class="col-6 col-xl-3 ph-icon-col">
-                    <a href="#" target="_blank" class="ph-icon-social">
-                        <img src="src/icons/social/youtube_white.svg" alt="youtube-icon" title=""/>
-                    </a>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ph-par">
+                        <h2 class="ph-par__title">
+                            The usual meetup
+                        </h2>
+                        <p class="ph-par__body">
+                            Oh fuck it, I am not gonna make up another wall of text that is not going to be used anyway. Enjoy the padding text here.
+
+                            Craft beer lomo lumbersexual kitsch, ennui small batch helvetica deep v fashion axe church-key. Crucifix raw denim glossier four dollar toast green juice keffiyeh mumblecore tousled. Oh fuck it, I am not gonna make up another wall of text that is not going to be used anyway.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
