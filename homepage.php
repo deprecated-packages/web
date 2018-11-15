@@ -10,9 +10,9 @@
     <title>Pehapkari.cz</title>
 </head>
 <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ph-nav">
+<nav id="ph-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light ph-nav">
     <div class="container">
-        <a class="ph-nav__logo navbar-brand" href="#">
+        <a class="ph-nav__logo navbar-brand" href="homepage.php">
             <img src="src/icons/logo/logo_blue.svg" alt="logo" title="">
             <p class="ml-2">Péhápkáři</p>
         </a>
@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ph-nav__menu ml-auto">
                 <li class="ph-nav__menu-item nav-item">
-                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="#meetups">
+                    <a class="ph-nav__menu-item-link ph-nav__menu-item-link__big nav-link" href="meetups.php">
                         Meetups
                     </a>
                 </li>

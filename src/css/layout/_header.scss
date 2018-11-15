@@ -18,12 +18,17 @@
   .navbar-toggler {
     border: none!important;
     padding: 0;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='5' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     width: 24px;
     height: 24px;
+    outline: none;
   }
 
   .ph-nav__logo {
@@ -78,10 +83,8 @@
 
   .navbar-toggler {
 
-    &:active {
-      .bg-light {
-        background-color: $blue!important;
-      }
+    &:active ~ .bg-light {
+      background-color: blue;
     }
   }
 }
@@ -105,6 +108,11 @@
     padding-top: 0;
     padding-bottom: 0;
     height: 95px;
+    transition: all 0.3s;
+    &.scrollUp {
+      transform: translateY(-95px);
+      box-shadow: 0 8px 32px 0 rgba(74,129,215,0.5), 0 8px 32px 0 rgba(16,14,28,0.1);
+    }
 
     .container {
       padding-left: 20px;
@@ -150,9 +158,5 @@
     .navbar-collapse {
       padding-top: 0px;
     }
-  }
-
-  .bg-light {
-    background-color: $white!important;
   }
 }
